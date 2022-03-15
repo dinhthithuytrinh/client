@@ -1,0 +1,51 @@
+<section class="tg-sectionspace tg-haslayout">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="tg-sectionhead">
+                    <h2><span>Latest News &amp; Articles</span>What's Hot in The Blogs</h2>
+                    <a class="tg-btn" href="javascript:void(0);">View All</a>
+                </div>
+            </div>
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                <div id="tg-postslider" class="tg-postslider tg-blogpost owl-carousel owl-loaded owl-drag" ngxSlickItem *ngFor="let blog of listblog" >
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item cloned" style="width: 292.5px;">
+                                <article class="item tg-post">
+                                    <figure><a href="javascript:void(0);"><img src="../../assets/images/blog/{{blog.thumbnail}}"
+                                                alt="image description"></a></figure>
+                                    <div class="tg-postcontent">
+                                        <ul class="tg-bookscategories">
+                                            <li><a href="javascript:void(0);">{{blog.category}}</a></li>
+                                            <li><a href="javascript:void(0);">Fun</a></li>
+                                        </ul>
+                                        <div class="tg-themetagbox"><span class="tg-themetag">featured</span>
+                                        </div>
+                                        <div class="tg-posttitle">
+                                            <h3><a href="javascript:void(0);">{{blog.title}}</a>
+                                            </h3>
+                                        </div>
+                                        <span class="tg-bookwriter">By: <a href="javascript:void(0);">{{blog.username}}</a></span>
+                                        <ul class="tg-postmetadata">
+                                            <li><a href="javascript:void(0);"><i class="fa fa-comment-o"></i><i>{{blog.commentNum}}
+                                                        Comments</i></a>
+                                            </li>
+                                            <li><a href="javascript:void(0);"><i class="fa fa-eye"></i><i>{{blog.views}}
+                                                        Views</i></a></li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="owl-dots">
+                        <div class="owl-dot active"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                    </div>
+                </div>
+            </ngx-slick-carousel>
+        </div>
+    </div>
+</section>

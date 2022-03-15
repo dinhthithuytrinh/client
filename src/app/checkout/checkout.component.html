@@ -1,0 +1,125 @@
+<body class="bg-light" style="height: inherit; ">
+    <div class="container">
+        <div class="py-5 text-center" style="padding-top: 50px;">
+            <h2>Checkout form</h2>
+            <p class="lead">Please check angian</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 order-md-2 mb-4">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Your List</span>
+                    <span class="badge badge-secondary badge-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li *ngFor="let borrowed of borrowedList"
+                        class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="">{{borrowed.title}}</h6>
+                            <small class="text-muted">{{borrowed.author}}</small>
+                        </div>
+                        <span class="text-muted">{{borrowed.quantity}}</span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total</span>
+                        <strong>{{totalQuantity}}</strong>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">Comfirm</h4>
+                <form [formGroup]="checkoutFormGroup" (ngSubmit)="onSubmit()" class="needs-validation" novalidate="">
+                    <div formGroupName="customer">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">First name</label>
+                                <input formControlName="firstName" type="text" class="form-control" id="firstName"
+                                    placeholder="" value="" required="">
+                                    
+                                <div class="invalid-feedback" *ngIf="firstName.invalid && (firstName.dirty || firstName.touched) ">
+                                    <div *ngIf="firstName.errors.required  || firstName.errors.notOnlyWhitespace">
+                                        First Name is required.
+                                    </div>
+                                    <div *ngIf="firstName.errors.minlength">
+                                        First Name must be at least 2 characters
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Last name</label>
+                                <input formControlName="lastName" type="text" class="form-control" id="lastName"
+                                    placeholder="" value="" required="">
+                                <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched) "
+                                    class="invalid-feedback">
+                                    <div *ngIf="lastName.errors.required || lastName.errors.notOnlyWhitespace">
+                                        Last name is required.
+                                    </div>
+                                    <div *ngIf="lastName.errors.minlength">
+                                        First Name must be at least 2 characters
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="username">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input formControlName="username" type="text" class="form-control" id="username"
+                                    placeholder="Username" required="">
+                                    <div *ngIf="username.invalid && (username.dirty || username.touched) "
+                                    class="invalid-feedback">
+                                    <div *ngIf="username.errors.required || username.errors.notOnlyWhitespace">
+                                        Username is required.
+                                    </div>
+                                    <div *ngIf="username.errors.minlength">
+                                        Username must be at least 2 characters
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                            <input formControlName="email" type="email" class="form-control" id="email"
+                                placeholder="you@example.com">
+                                <div *ngIf="email.invalid && (email.dirty || email.touched) "
+                                class="invalid-feedback">
+                                <div *ngIf="email.errors.required">
+                                    Email is required.
+                                </div>
+                                <div *ngIf="email.errors.pattern">
+                                    Email is invalid
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address">Address</label>
+                            <input formControlName="address" type="text" class="form-control" id="address"
+                                placeholder="1234 Main St" required="">
+                            <!-- <div class="invalid-feedback" *ngIf="address.invalid && (address.dirty) || address.touched">
+                            Please enter your shipping address.
+                        </div> -->
+                        </div>
+                        <hr class="mb-4">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="/docs/4.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="form-validation.js"></script> -->
+
+</body>

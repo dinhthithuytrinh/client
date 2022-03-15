@@ -1,0 +1,69 @@
+<section class="tg-sectionspace tg-haslayout">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="tg-sectionhead">
+                    <h2><span>People’s Choice</span>Bestborrowing Books</h2>
+                    <a class="tg-btn" href="javascript:void(0);">View All</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height: 575px;">
+                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                    <ng-container ngxSlickItem *ngFor="let book of books">
+                        <div id="tg-bestsellingbooksslider"
+                            class="tg-bestsellingbooksslider tg-bestsellingbooks owl-carousel owl-loaded owl-drag"  *ngIf="book.times >= 500"
+                            >
+                            <div class="item">
+                                <div class="tg-postbook">
+                                    <figure class="tg-featureimg">
+                                        <div class="tg-bookimg">
+                                            <div class="tg-frontcover"><img src="../../assets/images/books/{{book.images}}"
+                                                    alt="image description">
+                                            </div>
+                                            <div class="tg-backcover"><img src="../../assets/images/books/{{book.images}}" alt="image description">
+                                            </div>
+                                        </div>
+                                        <a class="tg-btnaddtowishlist" href="javascript:void(0);">
+                                            <i class="fa fa-heart"></i>
+                                            <span>See more</span>
+                                        </a>
+                                    </figure>
+                                    <div class="tg-postbookcontent">
+                                        <ul class="tg-bookscategories">
+                                            <li *ngFor="let cat of book.bookCat"><a href="javascript:void(0);" >{{cat.name}}</a></li>
+                                        </ul>
+                                        <div class="tg-themetagbox"><span class="tg-themetag">Recommend</span></div>
+                                        <div class="tg-booktitle">
+                                            <h3><a class="book_title" href="javascript:void(0);">{{book.title}}</a></h3>
+                                        </div>
+                                        <span class="tg-bookwriter">By: <a
+                                                href="javascript:void(0);">{{book.author.name}}</a></span>
+                                        <span class="tg-star">
+                                            <ngb-rating [max]="5" [(rate)]="book.rating" [readonly]="false">
+                                            </ngb-rating>
+                                        </span>
+                                        <span class="tg-bookprice">
+                                            <ins *ngIf="book.times > 0 else elseBlock">Available</ins>
+                                            <ng-template #elseBlock><ins>Unavailable</ins></ng-template>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="owl-nav">
+                        <div class="owl-prev tg-btnround tg-btnprev"><i class="icon-chevron-left"></i></div>
+                        <div class="owl-next tg-btnround tg-btnnext"><i class="icon-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="owl-dots">
+                        <div class="owl-dot active"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                    </div> -->
+                        </div>
+                    </ng-container>
+
+
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,29 @@
+<div id="tg-homeslider" class="tg-homeslider tg-haslayout owl-carousel owl-loaded owl-drag">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let authorweek of authorweeks" id="tg-homeslider"
+            class="tg-homeslider tg-haslayout owl-carousel owl-loaded owl-drag">
+            <div class="item" style="background: url(../../assets/images/slider/img-01.jpg)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="tg-slidercontent">
+                                <figure class="tg-authorimg"><a href="javascript:void(0);"><img src="../../assets/images/author/{{authorweek.image }}"
+                                            alt="image description"></a>
+                                </figure>
+                                <h1>{{authorweek.name}}</h1>
+                                <h2>Author of Week</h2>
+                                <div class="tg-description">
+                                    <p>{{authorweek.description}}</p>
+                                </div>
+                                <div class="tg-btns">
+                                    <a class="tg-btn" href="javascript:void(0);">See profile</a>
+                                    <a class="tg-btn" href="javascript:void(0);">See work</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ngx-slick-carousel>
+</div>

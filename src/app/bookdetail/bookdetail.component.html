@@ -1,0 +1,187 @@
+<div class="ebook">
+    <section class="doc-header animatedParent">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <figure class="mt-40 animated fadeInLeft go"><img src="../../assets/images/books/{{book?.images}}"
+                            alt="/"></figure>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="mb-35">{{book?.title}}</h2>
+                    <ul>
+                        <li>{{book?.description}}</li>
+                        <!-- <li>{{book?.author.name}}</li> -->
+                        
+                    </ul>
+                    <button (click)="addToList()" class="btn mt-30 mt-30" style="margin-right: 30px;">Borrow Now</button>
+                    <a routerLink="/home" class="btn mt-30"><i class="fa fa-arrow"></i> Back to home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="about-author animatedParent" data-sequence="500">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="visual text-center">
+                        <h4>about author</h4>
+                        <figure class="animated slideInLeft go" data-id="1"><img
+                                src="../../assets/images/author/imag-01.jpg" alt="/"></figure>
+                        <a href="#" class="title">Nguyễn Ngọc Tư</a>
+                        <span>1976</span>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-offset-2">
+                    <div class="detail animated fadeInRight go" data-id="2">
+                        <h5>Background</h5>
+                        <p>Cũng được </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <section class="our-books">
+        <div class="container">
+            <!-- <div class="sec-head text-center">
+                <h2>Same Author</h2>
+                <hr>
+
+            </div> -->
+            <!--//head-->
+            <!-- <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <div class="book">
+                        <figure style="background-image: url(../../assets/images/books/img-01.jpg);">
+                            <figcaption>
+                                <h5>How to Start new Buisiness?</h5>
+                                <a data-rel="prettyPhoto" href="../../assets/images/books/img-01.jpg"><i
+                                        class="fa fa-expand"></i></a>
+                                <span class="chapter">CHAPTER 1</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="book">
+                        <figure style="background-image: url(../../assets/images/books/img-01.jpg);">
+                            <figcaption>
+                                <h5>How to Start new Buisiness?</h5>
+                                <a data-rel="prettyPhoto" href="../../assets/images/books/img-01.jpg"><i
+                                        class="fa fa-expand"></i></a>
+                                <span class="chapter">CHAPTER 1</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="book">
+                        <figure style="background-image: url(../../assets/images/books/img-01.jpg);">
+                            <figcaption>
+                                <h5>How to Start new Buisiness?</h5>
+                                <a data-rel="prettyPhoto" href="../../assets/images/books/img-01.jpg"><i
+                                        class="fa fa-expand"></i></a>
+                                <span class="chapter">CHAPTER 1</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="book">
+                        <figure style="background-image: url(../../assets/images/books/img-01.jpg);">
+                            <figcaption>
+                                <h5>How to Start new Buisiness?</h5>
+                                <a data-rel="prettyPhoto" href="../../assets/images/books/img-01.jpg"><i
+                                        class="fa fa-expand"></i></a>
+                                <span class="chapter">CHAPTER 1</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="book">
+                        <figure style="background-image: url(../../assets/images/books/img-01.jpg);">
+                            <figcaption>
+                                <h5>How to Start new Buisiness?</h5>
+                                <a data-rel="prettyPhoto" href="../../assets/images/books/img-01.jpg"><i
+                                        class="fa fa-expand"></i></a>
+                                <span class="chapter">CHAPTER 1</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="book">
+                        <figure style="background-image: url(../../assets/images/books/img-01.jpg);">
+                            <figcaption>
+                                <h5>How to Start new Buisiness?</h5>
+                                <a data-rel="prettyPhoto" href="../../assets/images/books/img-01.jpg"><i
+                                        class="fa fa-expand"></i></a>
+                                <span class="chapter">CHAPTER 1</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="book">
+                        <figure style="background-image: url(../../assets/images/books/img-01.jpg);">
+                            <figcaption>
+                                <h5>How to Start new Buisiness?</h5>
+                                <a data-rel="prettyPhoto" href="../../assets/images/books/img-01.jpg"><i
+                                        class="fa fa-expand"></i></a>
+                                <span class="chapter">CHAPTER 1</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="book">
+                        <figure style="background-image: url(../../assets/images/books/img-01.jpg);">
+                            <figcaption>
+                                <h5>How to Start new Buisiness?</h5>
+                                <a data-rel="prettyPhoto" href="../../assets/images/books/img-01.jpg"><i
+                                        class="fa fa-expand"></i></a>
+                                <span class="chapter">CHAPTER 1</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- <section class="testimonials clearfix">
+        <div class=" clearfix">
+            <div class="wrapper clearfix animatedParent" data-sequence="500">
+                <h2>Readers Thoughts</h2>
+                <hr>
+                <div class="testimonial animated fadeInRight go" data-id="1">
+                    <figure><img src="../../assets/images/users/img-01.jpg" alt="/"></figure>
+                    <div class="pad">
+                        <h5>Sara Joe says...</h5>
+                        <p>Sed sed neque eu diam egestas bibendum eu nec arcu. Nam non aliquam felis, vitae ullamcorper
+                            felis.</p>
+                    </div>
+                </div>
+                <div class="testimonial animated fadeInRight go" data-id="2">
+                    <figure><img src="../../assets/images/users/img-01.jpg" alt="/"></figure>
+                    <div class="pad">
+                        <h5>Sara Joe says...</h5>
+                        <p>Sed sed neque eu diam egestas bibendum eu nec arcu. Nam non aliquam felis, vitae ullamcorper
+                            felis.</p>
+                    </div>
+                </div>
+                <div class="testimonial animated fadeInRight go" data-id="3">
+                    <figure><img src="../../assets/images/users/img-01.jpg" alt="/"></figure>
+                    <div class="pad">
+                        <h5>Sara Joe says...</h5>
+                        <p>Sed sed neque eu diam egestas bibendum eu nec arcu. Nam non aliquam felis, vitae ullamcorper
+                            felis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="style">
+    </section> -->
+</div>

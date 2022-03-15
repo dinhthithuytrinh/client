@@ -1,0 +1,16 @@
+<div class="tg-wishlistandcart">
+    <div class="dropdown tg-themedropdown tg-wishlistdropdown">
+        <a routerLink="/borrowedList" id="tg-wishlisst" class="tg-btnthemedropdown">
+           
+            <ng-container *ngIf="(listService.totalQuantity$ | async) as displayTotalQuantity; else totalQuantity0">
+                <span class="tg-themebadge">{{displayTotalQuantity}}</span>
+            </ng-container>
+            <ng-template #totalQuantity0>
+                <span class="tg-themebadge">{{ 0 }}</span>
+            </ng-template>
+            <i class="fa fa-heart"></i>
+            <span>Borrowing List</span>
+        </a>
+       
+    </div>
+</div>

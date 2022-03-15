@@ -1,0 +1,23 @@
+.tg-bookimg{
+	width: 100%;
+	float: left;
+	position: relative;
+	height: 460px;
+}
+.tg-frontcover{
+	height: 460px;
+}
+.tg-backcover{
+	height: 440px;
+}
+.page-item{
+	list-style: none!important;
+}
+
+li{
+	list-style: none!important;
+}
+.pagination li{
+
+	list-style: none!important;
+}

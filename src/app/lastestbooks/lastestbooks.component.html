@@ -1,0 +1,90 @@
+<section class="tg-bglight tg-haslayout">
+    <div class="container">
+        <div class="row">
+            <div class="tg-featureditm">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 hidden-sm hidden-xs tg-featureditm__img">
+                    <figure><img src="../../assets/images/books/{{books[0].images}}" alt="image description"></figure>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 tg-featureditm__cont">
+                    <div class="tg-featureditmcontent">
+                        <div class="tg-themetagbox"><span class="tg-themetag">NEW</span></div>
+                        <div class="tg-booktitle">
+                            <h3><a href="javascript:void(0);">{{books[0].title}}</a>
+                            </h3>
+                        </div>
+                        <span class="tg-bookwriter">By: <a
+                                href="javascript:void(0);">{{books[0].author.name}}</a></span>
+                        <ngb-rating [max]="5" [(rate)]="books[0].rating" [readonly]="false">
+                        </ngb-rating>
+                        <a class="tg-btn tg-btnstyletwo tg-active btn-radius" href="javascript:void(0);">
+                            <i class="fa fa-shopping-basket"></i>
+                            <em>See more</em>
+                        </a>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tg-sectionspace tg-haslayout">
+    <div class="container">
+        <div class="row">
+            <div class="tg-newrelease">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="tg-sectionhead">
+                        <h2><span>Taste The New Spice</span>New Release Books</h2>
+                    </div>
+                    <div class="tg-description">
+                        <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore toloregna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoiars nisiuip
+                            commodo consequat aute irure dolor in aprehenderit aveli esseati cillum dolor
+                            fugiat nulla pariatur cepteur sint occaecat cupidatat.</p>
+                    </div>
+                    <div class="tg-btns">
+                        <a class="tg-btn tg-active" href="javascript:void(0);">View All</a>
+                        <a class="tg-btn" href="javascript:void(0);">Read More</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="row">
+                        <div class="tg-newreleasebooks" *ngFor="let book of books.slice(1, 4);">
+                            <div class="col-xs-4 col-sm-4 col-md-6 col-lg-4">
+                                <div class="tg-postbook">
+                                    <figure class="tg-featureimg">
+                                        <div class="tg-bookimg">
+                                            <div class="tg-frontcover"><img
+                                                    src="../../assets/images/books/{{book.images}}"
+                                                    alt="image description"></div>
+                                            <div class="tg-backcover"><img
+                                                    src="../../assets/images/books/{{book.images}}"
+                                                    alt="image description">
+                                            </div>
+                                        </div>
+                                        <a class="tg-btnaddtowishlist" href="javascript:void(0);">
+                                            <i class="fa fa-heart"></i>
+                                            <span>See more</span>
+                                        </a>
+                                    </figure>
+                                    <div class="tg-postbookcontent">
+                                        <ul class="tg-bookscategories">
+                                            <li *ngFor="let cat of book.bookCat"><a href="javascript:void(0);">{{cat.name}}</a></li>
+                                        </ul>
+                                        <div class="tg-booktitle">
+                                            <h3><a href="javascript:void(0);">{{book.title}}</a>
+                                            </h3>
+                                        </div>
+                                        <span class="tg-bookwriter">By: <a
+                                                href="javascript:void(0);">{{book.author.name}}</a></span>
+                                        <ngb-rating [max]="5" [(rate)]="book.rating" [readonly]="false">
+                                        </ngb-rating>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

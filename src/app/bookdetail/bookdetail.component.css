@@ -1,0 +1,909 @@
+/*
+Table OF Contents
+==========================
+1-Body
+2-General Styles
+3-Form Styling
+4-Spacing Helping Classes
+5-Parallax
+6-Header
+7-Download Bar
+8-About Us
+9-About Author
+10-Our Books
+11-Promo
+12-Testimonails
+13-Purchase
+14-Footer
+15-Demo2
+16-Demo3
+17-Demo4
+18-Responsive
+*/
+
+
+/*==========================================
+1-Body
+==========================================*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+	overflow: hidden;
+	overflow-y: scroll;
+	font-size:14px;
+    color:#808080;
+    background: #fff;
+}
+.ebook{background: #F5F5F5;}
+p { margin: 0 0 10px; line-height: 22px;}
+.container{
+    width: 930px;
+    max-width: 100%;
+    position: relative;
+}
+
+/*=============================================
+2-General Styles
+==============================================*/
+
+.lt-ie9 .animated {
+	opacity: 1 !important;
+	-webkit-animation: none !important;
+	animation: none !important;
+	transform: none !important;
+}
+section{ padding: 80px 0; }
+img {
+	max-width: 100%;
+	height: auto;
+    height: 100%;
+}
+ul{
+	margin:0;
+}
+a { outline: none !important; color:inherit; }
+a:hover{color: inherit;}
+h1, h2, h3, h4, h5, h6 {
+	margin:10px 0;
+    color:#3A3F55;
+    font-weight: bold;
+}
+h1 { font-size: 60px; }
+h2 { font-size: 42px; }
+h3 { font-size: 36px; }
+h4 { font-size: 28px; }
+h5 { font-size: 18px; }
+h6 { font-size: 14px; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.btn{
+	padding:10px 25px;
+    background: #ffcb00;
+	border-radius:0;
+    text-align: center;
+    border:0;
+	text-transform:inherit;
+    font-size: 18px;
+    position: relative;
+    font-weight: bold;
+    color: #fff;
+}
+.btn-blue{background: #3A3F55;}
+.btn-green{
+    background: #6AA12E !important;
+    border-radius: 4px;
+    padding: 15px 30px;
+}
+.btn-green:after,.btn-md:after{
+    background: #5f842d none repeat scroll 0 0;
+    border-radius: 0 0 4px 4px;
+    bottom: -1px;
+    color: #fff;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.btn-wide{	width:100%;}
+.btn-md{
+    font-size: 18px;
+    padding: 20px 65px;
+    border-radius: 5px;
+}
+.btn-md:after{
+    background: #CBAC34 none repeat scroll 0 0;
+    height: 6px;
+    border-radius: 0 0 5px 5px;
+}
+.text-extralight{font-weight:100 !important;}
+.text-light{font-weight:300 !important;}
+.text-semibold{font-weight:600 !important;}
+.text-bold{font-weight:700 !important;}
+.text-extrabold{font-weight:800 !important;}
+.text-uppercase{text-transform:uppercase !important;}
+.text-lowercase{text-transform:lowercase !important;}
+
+/*===============================================
+3-Form Styling
+=================================================*/
+
+input[type="text"],input[type="tel"],input[type="email"],input[type="password"],textarea{
+	width:100%;
+    border: 0;
+	border:none;
+	background:#fff;
+	border-radius:0;
+	height:46px;
+	padding:15px;
+    font-size: 15px;
+	text-transform:inherit;
+}
+input[type="text"].tranparent,input[type="tel"].tranparent,input[type="email"].tranparent,input[type="password"].tranparent,textarea.tranparent{
+	background:none;
+	border:1px solid #7cbf1d;
+	color:#7cbf1d;
+}
+textarea{
+	height:180px;
+	padding:25px 35px;
+}
+label{
+	color:#8e9297;
+}
+label.tranparent{
+	color:#8e9297;
+}
+
+/*==============================================
+4-Spacing Helping Classes
+===============================================*/
+
+.mb-10{ margin-bottom:10px;}
+.mb-15{ margin-bottom:15px;}
+.mb-20{ margin-bottom:20px;}
+.mb-25{ margin-bottom:25px;}
+.mb-30{ margin-bottom:30px;}
+.mb-35{ margin-bottom:35px;}
+.mb-40{ margin-bottom:40px;}
+.mb-45{ margin-bottom:45px;}
+.mb-50{ margin-bottom:50px;}
+.mt-10{ margin-top:10px;}
+.mt-15{ margin-top:15px;}
+.mt-20{ margin-top:20px;}
+.mt-25{ margin-top:25px;}
+.mt-30{ margin-top:30px;}
+.mt-35{ margin-top:35px;}
+.mt-40{ margin-top:40px;}
+.mt-45{ margin-top:45px;}
+.mt-50{ margin-top:50px;}
+
+.overlay {
+	background: rgba(255,255,255,0.88);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+/*==========================
+5-parallax
+==========================*/
+
+.parallax {
+	overflow: hidden;
+	clear: both;
+	position: relative;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 0;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	padding: 0;
+	background:#78e2dc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.parallax .overlay {
+	background: rgba(10,10,10,0.54);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.parallax_inner {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	min-height:250px;
+}
+.parallax_one { background-image: url(/assets/images/bg5.jpg) !important;}
+
+/*=======MAin=======*/
+
+/*==============================================
+6-Header
+==============================================*/
+
+.ebook header{background: url(/assets/images/bg1.jpg) no-repeat; 
+    background-size: cover;
+    color: rgb(58, 63, 85);
+    padding: 85px 0;
+}
+.ebook header ul{padding: 0; font-size: 16px;}
+.ebook header ul li{
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 30px;
+}
+.ebook header ul li:before{
+    content: '';
+    background: #FFCB00;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    border-radius: 50%;
+}
+
+/*==================================================
+7-Download Bar
+====================================================*/
+
+.ebook .download-bar{
+    overflow: hidden;
+    background: #3A3F55;
+    position: relative;
+    padding: 10px 0;
+}
+.ebook .download-bar:after{
+    content: '';
+    background: #FFCB00;
+    position: absolute;
+    right: -16%;
+    top: 0;
+    width: 70%;
+    height: 105%;
+    transform: skew(-45deg);
+    -webkit-transform: skew(-45deg);
+    -moz-transform:skew(-45deg);
+    -o-transform: skew(-45deg);
+    -ms-transform: skew(-45deg);
+}
+.ebook .download-bar .info{
+    color: #fff;
+    position: relative;
+}
+.ebook .download-bar .info .fa{
+    font-size: 55px;
+    height: 48px;
+    position: absolute;
+    width: 52px;
+    left: 0;
+    top: 50%;
+    margin-top: -24px;
+}
+.ebook .download-bar h5{
+    margin-bottom: 0;
+    color: rgb(255, 203, 0);
+}
+.ebook .download-bar .info .pad{padding-left: 62px;}
+.ebook .download-bar .container{z-index: 20;}
+.ebook .download-bar input{
+    width: 55%;
+    display: inline-block;
+    float: left;
+    margin-right: 3%;
+}
+.ebook .download-bar button{
+    width: 42%;
+}
+.ebook .download-bar .search{margin-top: 20px;}
+
+/*================================================
+8-About Us
+=================================================*/
+
+.ebook .sec-head{margin-bottom: 30px;}
+.ebook .sec-head hr{
+    height: 2px;
+    background: #FFCB00;
+    position: relative;
+    width: 370px;
+    max-width: 100%;
+    margin: 20px auto 30px auto;
+    border: 0;
+}
+.ebook .sec-head hr:after{
+    content: '';
+    height: 10px;
+    width: 100px;
+    background: #3A3F55;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -5px;
+}
+.ebook .about-us{padding-bottom: 110px; background: #f5f5f5;}
+.ebook .about-us .wrapper{
+    position: relative;
+    margin-top: 45px;
+}
+.ebook .about-us .about{width: 230px;}
+.ebook .about-us .left,.ebook .about-us .right{ position: absolute; }
+.ebook .about-us .left-t{
+    left: 0;
+    top: 0;
+}
+.ebook .about-us .left-b{
+    left: 0;
+    top: 140px;
+}
+.ebook .about-us .right-t{
+    right: 0;
+    top: 0;
+}
+.ebook .about-us .right-b{
+    right: 0;
+    top: 140px;
+}
+.ebook .about-us h5{
+    position: relative;
+    color: rgb(255, 203, 0);
+    display: inline;
+}
+.ebook .about-us .left h5:after{
+    content: '';
+    width: 90px;
+    height: 1px;
+    background: rgb(255, 203, 0);
+    position: absolute;
+    top: 50%;
+    right: -100px;
+}
+.ebook .about-us .left h5:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 203, 0);
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: -100px;
+    border-radius: 50%;
+}
+.ebook .about-us .right h5:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 203, 0);
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: -100px;
+    border-radius: 50%;
+}
+.ebook .about-us .right h5:after{
+    content: '';
+    width: 90px;
+    height: 1px;
+    background: rgb(255, 203, 0);
+    position: absolute;
+    top: 50%;
+    left: -100px;
+}
+
+/*===============================================
+9-About Author
+================================================*/
+
+.ebook .about-author{
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+.ebook .about-author:after{
+    background: #3a3f55 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -13%;
+    top: 0;
+    transform: skewX(-18deg);
+    width: 70%;
+    -webkit-transform: skew(-18deg);
+    -moz-transform:skew(-18deg);
+    -o-transform: skew(-18deg);
+    -ms-transform: skew(-18deg);
+}
+.ebook .about-author .visual h4{
+    color: #fff;
+    background: #FFCB00;
+    width: 100%;
+    margin: 0;
+    padding:7px 0  10px 0;
+    font-weight: 400;
+}
+.ebook .about-author .visual figure{
+    overflow: hidden;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 60px auto 25px auto;
+}
+.ebook .about-author .visual a.title{
+    color:#696969;
+    font-size: 28px;
+}
+.ebook .about-author .visual span{
+    display: block;
+    color:#FFCB00;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.ebook .about-author .visual {margin-bottom: 30px;}
+.ebook .about-author .container{z-index: 25;}
+.ebook .about-author .detail{
+    color: #fff;
+    padding: 60px 0 90px 0;
+}
+.ebook .about-author .detail h5{
+    color:#FFCB00;
+}
+
+/*===============================================
+10-Our Books
+===============================================*/
+
+.ebook .our-books{background: #f5f5f5; padding-bottom: 40px;}
+.ebook .our-books figure{
+    position: relative;
+    height: 265px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ebook .our-books figcaption{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,203,0,0.9);
+    color: #fff;
+    padding: 10px 12px;
+}
+.ebook .our-books figcaption h5{
+    color: #fff;
+    font-weight: 600;
+}
+.ebook .our-books figcaption .chapter{
+    background: #3A3F55;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+    padding: 15px 0;
+}
+.ebook .our-books figcaption .fa{
+    height: 46px;
+    width: 46px;
+    background: #3A3F55;
+    line-height: 46px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -23px;
+    margin-left: -23px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+.ebook .our-books .book{margin-bottom: 40px;}
+.ebook .our-books .sec-head{margin-bottom: 85px;}
+
+/*===========================================
+11-Promo
+===========================================*/
+
+.ebook .promo{
+    background: #3A3F55;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 30px 0;
+}
+.ebook .promo span{margin-top: 5px;}
+
+/*=============================================
+12-Testimonials
+=============================================*/
+
+.ebook .testimonials{
+    background: url(/assets/images/bg2.png) no-repeat;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+}
+.ebook .testimonials hr.style{
+    height: 10px;
+    background: #3A3F55;
+    position: relative;
+    border: none;
+    margin: 0;
+    overflow: hidden;
+}
+.ebook .testimonials hr.style:after{
+    background: #FFCB00 none repeat scroll 0 0;
+    content: "";
+    height: 10px;
+    position: absolute;
+    right: -5%;
+    bottom: 0px;
+    width: 55%;
+    transform: skewX(-45deg);
+    -webkit-transform: skew(-45deg);
+    -moz-transform:skew(-45deg);
+    -o-transform: skew(-45deg);
+    -ms-transform: skew(-45deg);
+}
+.ebook .testimonials .wrapper{
+    width: 50%;
+    float: right;
+    background: #fff;
+    height: 100%;
+    padding: 10px 190px 40px 25px;
+    position: relative;
+}
+.ebook .testimonials .wrapper:before{
+    content: "";
+    background: url(/assets/images/m9.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+    -webkit-transform: translate(0px, -50%);
+    -moz-transform: translate(0px, -50%);
+    -o-transform: translate(0px, -50%);
+    -ms-transform: translate(0px, -50%);
+    left: -445px;
+    height: 357px;
+    width: 445px;
+}
+.ebook .testimonial{
+    position: relative;
+    margin-bottom: 25px;
+}
+.ebook .testimonial figure{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ebook .testimonial .pad{padding-left: 100px;}
+.ebook .testimonial h5{
+    color: #FFCB00;
+    font-weight: 800;
+}
+.ebook .testimonials .wrapper hr{
+    background: #FFCB00;
+    height: 10px;
+    width: 275px;
+    border: 0;
+    margin: 0;
+    position: relative;
+    margin: 15px 0 30px 0;
+}
+.ebook .testimonials .wrapper hr:after{
+    content: '';
+    background: #3A3F55;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*============================================
+13-Purchase
+=============================================*/
+
+.ebook .purchase{
+    background: url(/assets/images/bg3.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.ebook .purchase h4{color: #FACB05;}
+.ebook .purchase figure{position: relative; margin: 50px auto 65px auto; display: table;}
+.ebook.demo3 .purchase figure{display: block;}
+.ebook .purchase figcaption{
+    background: #FACB05;
+    height: 78px;
+    width: 78px;
+    border-radius: 50%;
+    line-height: 78px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 26px;
+    position: absolute;
+    right: -39px;
+    top: -39px;
+}
+.no-pad{padding: 0;}
+.no-pad-left{padding-left: 0;}
+.ebook .purchase .package.style{position: relative;}
+.ebook .purchase .package.style:after{
+    content: '';
+    background: url(/assets/images/divider.png);
+    height: 370px;
+    width: 92px;
+    position: absolute;
+    right: -46px;
+    top: 50%;
+    margin-top: -185px;
+}
+.ebook .purchase .sec-head{margin-bottom: 90px;}
+
+/*============================================
+14-Footer
+============================================*/
+
+.ebook footer{
+    background: #FFCB00;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/*============================================ds
+15-Demo2
+=============================================*/
+
+.ebook.demo2{background: url(/assets/images/bg4.png) repeat;}
+.ebook.demo2 header{padding: 85px 20px;}
+.ebook.demo2 .our-books{padding: 40px 20px;}
+.ebook.demo2 .promo{padding: 30px 20px;}
+.ebook.demo2 .testimonials .wrapper{padding-right: 20px}
+.ebook .purchase{padding: 80px 20px;}
+
+/*==============================================
+16-Demo3
+===============================================*/
+
+.ebook.demo3{margin: 50px 0;}
+
+.ebook.demo3 header{padding-left: 0;}
+
+.ebook.demo3 header{
+    background: url(/assets/images/bg3.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.ebook.demo3 .download-bar::after,.ebook.demo3 .about-author::after,.ebook.demo3 .testimonials hr.style::after{display: none;}
+.ebook.demo3 .about-author{background: #3a3f55; color: #fff;}
+.ebook.demo3 .about-author .visual a.title{color: #fff;}
+.ebook.demo3 .our-books figcaption{background:  rgba(0, 0, 0, 0.8);}
+.ebook.demo3 .download-bar button{ 
+    border-radius: 0;
+    padding: 10px 20px;
+}
+.ebook.demo3 .download-bar .btn-green:after{display: none;}
+.ebook.demo3 footer{background: #3A3F55;}
+.ebook.demo3 header ul li::before,.ebook.demo3 .sec-head hr,.ebook.demo3 .availability .fa,.ebook.demo3 .about-author .visual h4,.ebook.demo3 .testimonials .wrapper hr,.ebook.demo3 .purchase figcaption
+{background: #7AA93C;}
+.ebook.demo3 .download-bar h5,.ebook.demo3 .availability h5,.ebook.demo3 .about-author .visual span,.ebook.demo3 .about-author .detail h5,.ebook.demo3 .testimonial h5,.ebook.demo3 .purchase h4
+{color: #7AA93C;}
+.ebook .availability{
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #f5f5f5;
+}
+.ebook .availability h5{color: #FFCB00; margin: 20px 0;}
+.ebook .availability .fa{
+    background: #FFCB00;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    font-size: 50px;
+    color: #fff;
+    border-radius: 50%;
+}
+.ebook .availability .available{margin-bottom: 40px;}
+.ebook .availability .sec-head{margin-bottom: 80px;}
+
+/*================================================
+17-Demo4
+=================================================*/
+
+.ebook.demo4 .about-author::after{transform: none;}
+.ebook.demo4 .about-author .detail h4{font-size: 28px; color: #fff;}
+.ebook.demo4 .about-author .detail span{color: #FFCB00; margin-bottom: 40px; display: block;}
+.ebook.demo4 .about-author .visual-style{padding-top: 25px;}
+.ebook.demo4 .testimonials h2{margin-bottom: 75px;}
+.ebook.demo4 .testimonials{
+    background: #f5f5f5;
+    padding-top: 40px; 
+}
+.ebook.demo4 .testimonial{
+    background: #fff;
+    padding: 30px 30px 75px 30px;
+    border-radius: 6px;
+    margin-bottom: 50px;
+}
+.ebook.demo4 .testimonial .pad{padding: 0;}
+.ebook.demo4 .testimonial figure{
+    top: -40px;
+    right: 30px;
+    left: auto;
+}
+.ebook.demo4 .testimonials .quote{
+    color: #E4E4E4;
+    font-size: 70px;
+    text-align: center;
+    display: block;
+}
+.ebook.demo4 footer{background: #3A3F55;}
+.ebook.demo4 .purchase{padding-bottom: 120px;}
+.ebook.demo4 header{
+    position: relative;
+    color: #fff;
+    padding-bottom: 60px;
+}
+.ebook.demo4 header .overlay{background: rgba(0,0,0,0.76);}
+.ebook.demo4 header h1,.ebook.demo4 header h4 span{color: #fff;}
+.ebook.demo4 header h4 {color: #FFCB00;}
+.ebook.demo4 header h1{margin-top: 80px;}
+.ebook.demo4 header .search input{
+    width: 58%; 
+    color: #000; 
+    float: left; 
+    margin-right: 2%;
+}
+.ebook.demo4 header .search button{width: 40%;}
+.ebook.demo4 header .search{margin-top: 80px;}
+
+
+/*=============================================
+18-Responsive
+==============================================*/
+
+/*===Break Point===*/
+@media (max-width: 1199px) {
+    
+    .container{width: 96%;}
+    
+    .ebook .testimonials .wrapper{padding-right: 40px;}
+}
+
+/*===Break Point===*/
+@media (max-width: 990px) {
+    
+    h1{font-size: 50px;}
+    h2{font-size: 38px;}
+    
+    .ebook .about-us figure{display: none;}
+    .ebook .about-us{padding-bottom: 280px;}
+    .ebook .about-us h5::after,.ebook .about-us h5::before{display: none;}
+    
+    .ebook .promo .pull-left,.ebook .promo .pull-right{float: none !important;}
+    .ebook .promo a.btn{margin-top: 15px;}
+    .ebook .promo span{display: block;}
+    
+    .ebook .testimonials .wrapper{
+        width: 100%;
+        float: none;
+        padding-top: 30px;
+    }
+    .ebook .testimonials .wrapper:before{display: none;}
+    .ebook .testimonial{margin-bottom: 45px;}
+}
+
+/*===Break Point===*/
+@media (max-width: 767px) {
+    
+    h1{font-size: 44px;}
+    h2{font-size: 36px;}
+    .ebook header figure{margin-top: 0;}
+    
+    .ebook .download-bar::after{display: none;}
+    .ebook .download-bar button{background: #FFCB00;}
+    .ebook .download-bar button{width: 100%;}
+    .ebook .download-bar input{width: 100%; margin: 10px 0; float: none;}
+    
+    .ebook .about-author::after{display: none;}
+    .ebook .about-author{background: #3a3f55;}
+    .ebook .about-author .detail{padding-top: 0; padding-bottom: 40px;}
+    .ebook .about-author .visual a.title{color: #fff; font-weight: bold;}
+    .ebook .about-author .visual figure{margin-top: 35px;}
+    
+    .ebook .our-books .sec-head{margin-bottom: 40px;}
+    .ebook .our-books .book figure{height: 400px;}
+    .ebook .our-books .book figure img{width: 100%;}
+    
+    .ebook .purchase .package.style::after{display: none;}
+    .ebook .purchase .package.style{margin-bottom: 40px;}
+    .ebook .purchase .sec-head{margin-bottom: 35px;}
+    .ebook .purchase figure{margin-bottom: 35px;}
+    .ebook .purchase{padding: 40px 20px;}
+    
+    .ebook.demo2 header{padding: 40px 20px;}
+    .ebook.demo2 .about-us{padding-left: 30px; padding-right: 30px;}
+    
+    .ebook.demo3 header figure{margin-left: -20px}
+    
+    .ebook.demo4 header figure{display: none;}
+    .ebook.demo4 header{padding: 40px 0;}
+    .ebook.demo4 header h1{margin-top: 20px;}
+    .ebook.demo4 .about-author figure{display: none;}
+    .ebook.demo4 .testimonial{margin-bottom: 70px;}
+    .ebook.demo4 .purchase{padding-bottom: 60px;}
+    
+    .ebook .availability{padding: 50px 20px;}
+}
+
+/*===Break Point===*/
+
+@media (max-width:560px){
+    
+    h1{font-size: 32px;}
+    h2{font-size: 34px;}
+    
+    .ebook .about-us{padding: 30px 0;}
+    .ebook .about-us .about{
+        position: relative; 
+        text-align: center; 
+        margin: 40px auto;
+        top: 0;
+    }
+    .ebook .about-us .sec-head{margin-bottom: 0;}
+    
+    .ebook .our-books .book figure{height: 265px;}
+    
+    .ebook.demo4 header .search{margin-top: 40px;}
+    .ebook.demo4 header .search button{width: 100%; margin-top: 10px;}
+    .ebook.demo4 header .search input{margin: 0; width: 100%;}
+}
+
+/*===Break Point===*/
+@media (max-width: 360px) {
+    
+    h1{font-size: 30px;}
+    h2{font-size: 28px;}
+    
+    a.btn{width: 100%;}
+    
+    .btn-md{padding: 15px; width: 100%;}
+    
+    .ebook .testimonial figure{position: relative; margin: 0 auto;}
+    .ebook .testimonial .pad{padding: 0;}
+    .ebook .testimonial{text-align: center;}
+    
+    .ebook.demo4 .testimonial figure{right: 0; top: -13px;}
+    .ebook.demo4 .testimonial{padding: 30px 20px;}
+}
+
+/*===Break Point===*/
+@media (max-width: 320px) {
+}
+
+.ebook .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

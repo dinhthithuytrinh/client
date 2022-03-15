@@ -1,0 +1,17 @@
+<div class="tg-userlogin" *ngIf="authenticationService.isLoggedIn()" (click)="logout()">
+    <button (click)="logout()"><span>Logout</span></button>
+</div>
+<div class="tg-userlogin" *ngIf="authenticationService.isLoggedIn() && authenticationService.getLoggedInUsername()">
+    <figure><a routerLink="/profile" ><img src="../../assets/images/users/img-01.jpg"
+                alt="image description"></a></figure>
+    <span>Hi,  {{authenticationService.getLoggedInUsername()}}</span>
+</div>
+
+
+
+<div class="tg-userlogin" *ngIf="!authenticationService.isLoggedIn()">
+    <figure><a  routerLink="/login"><img src="../../assets/images/users/img-01.jpg"
+                alt="image description"></a></figure>
+    <span>Login</span>
+</div>
+

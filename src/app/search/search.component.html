@@ -1,0 +1,9 @@
+<div class="tg-searchbox">
+    <form class="tg-formtheme tg-formsearch">
+        <fieldset>
+            <input #mySearch type="text" name="search" class="typeahead form-control"
+                placeholder="Search by title, author, keyword, ISBN...">
+            <button (click)="doSearch(mySearch.value)" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </fieldset>
+    </form>
+</div>
